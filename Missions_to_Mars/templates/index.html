@@ -15,8 +15,7 @@
     <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a>
   </div>
 
-  <div class="container">
-    <!-- <div class="row"><div class="col"><div style="height:40px"></div></div></div> -->
+  <div class="container">  
 
     <div class="row" style="margin-top:40px;">
       <div class="col">
@@ -37,6 +36,7 @@
         {{ data.marsFacts_html_tbl | safe }}
       </div>
     </div>  
+
     <div class="row" style="margin-top:40px;">
       <div class="col text-center"><h2>Mars Hemispheres</h2></div>
     </div>
@@ -52,6 +52,7 @@
           </div>
       </div>
       {% endfor %}
+      
       <div class="row"><div class="col-12"><hr /></div></div>
     </div>
 

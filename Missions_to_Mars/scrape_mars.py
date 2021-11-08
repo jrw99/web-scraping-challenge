@@ -19,8 +19,6 @@ def scrape():
     html = browser.html
     soup = bs(html, 'html.parser')
 
-    # time.sleep(1)
-
     # get the first list_date (if needed) and retain content_title and article_teaser_body inside of list_text as they 
     # are in chronological order with the latest being first
     marsNews_latest_Title = soup.find('div', class_='content_title').get_text()
